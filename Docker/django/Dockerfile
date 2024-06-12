@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
 RUN mkdir /app
 WORKDIR /app
 
-# Copy requirements.txt from two directories up
+# Copy requirements.txt from two directories up 
 COPY requirements.txt /app/
 RUN pip install --no-cache-dir -r requirements.txt
 
