@@ -6,10 +6,12 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
 # Install MySQL client and development libraries
-RUN apt-get update && apt-get install -y \
-    default-libmysqlclient-dev \
-    build-essential \
-    && rm -rf /var/lib/apt/lists/*
+# Install system dependencies
+RUN apt-get update \
+    && apt-get install -y gcc \
+    && apt-get install -y default-libmysqlclient-dev \
+    && apt-get install -y pkg-config \
+    && apt-get clean
 
 RUN mkdir /app
 WORKDIR /app

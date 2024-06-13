@@ -6,7 +6,7 @@ services:
     container_name: email_sms_project_backend
     build:
       context: ./Docker/django
-    command: bash -c "cd backend && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
     volumes:
       - .:/app
     ports:
