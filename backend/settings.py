@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'drf_yasg',
     # Own Apps
-    'apps.account'
+    'apps.account',
+    'apps.profiles'
 ]
 
 MIDDLEWARE = [
