@@ -7,7 +7,6 @@ services:
     build:
       context: .
       dockerfile: Docker/django/Dockerfile
-    command: bash -c "/usr/src/app/entrypoint.sh"
     volumes:
       - .:/app
     ports:

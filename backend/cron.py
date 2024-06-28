@@ -12,6 +12,7 @@ def daily_check_birthdays():
     logger.info("===> Cron job started: checking birthdays")
     # today = datetime.now().date()
     # profiles = Profile.objects.filter(dob__day=today.day, dob__month=today.month)
+    # logger.info("===> Profile", profiles, today)
     
     # if profiles:
     #     birthday_message = "Today is the birthday of:\n"

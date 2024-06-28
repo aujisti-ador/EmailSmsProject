@@ -4,4 +4,3 @@ mysqlclient==2.1.1
 djangorestframework-simplejwt==5.2.2
 drf_yasg==1.21.4
 django-crontab
-gunicorn

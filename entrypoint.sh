@@ -18,5 +18,5 @@ service cron start
 # Tail the cron log to keep the container running
 tail -f /var/log/cron.log &
 
-# Start Django server with gunicorn
-exec gunicorn backend.wsgi:application --bind 0.0.0.0:8000
+# Start the Django development server
+exec python manage.py runserver 0.0.0.0:8000
