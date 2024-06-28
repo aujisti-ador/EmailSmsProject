@@ -3,3 +3,4 @@ djangorestframework
 djangorestframework-simplejwt
 drf-yasg
 mysqlclient
+django-crontab
